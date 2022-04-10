@@ -1,0 +1,12 @@
+version: "2"
+
+services:
+  react:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react
+    ports:
+      - "4100:80"
+    environment:
+      - REACT_APP_BACKEND_URL=https://spring.karpiniak.pl/api
