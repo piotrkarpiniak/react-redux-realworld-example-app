@@ -4,7 +4,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 RUN npm install
 COPY . ./
-RUN REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL} npm run build
+RUN npm run build
 
 # production environment
 FROM nginx:stable-alpine

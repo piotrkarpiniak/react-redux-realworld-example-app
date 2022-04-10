@@ -8,5 +8,5 @@ services:
     container_name: react
     ports:
       - "4100:80"
-    environment:
-      - REACT_APP_BACKEND_URL=https://spring.karpiniak.pl/api
+#    environment:
+#      - 'REACT_APP_BACKEND_URL=https://spring.karpiniak.pl'
